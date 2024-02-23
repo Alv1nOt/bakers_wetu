@@ -1,0 +1,17 @@
+.env
+db.sqlite3
+*.log
+media/cache
+static/cache
+__pycache__
+*.pyc
+local_settings.py
+
+.DS_Store
+.Thumbs.db
+.idea (if using IntelliJ IDEA)
+.vscode (if using Visual Studio Code)
+.sublime-project (if using Sublime Text)
+
+migrations
+test_results

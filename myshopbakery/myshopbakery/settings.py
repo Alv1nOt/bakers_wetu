@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'shopbakery.apps.ShopbakeryConfig'
+    'shopbakery.apps.ShopbakeryConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
@@ -81,6 +82,8 @@ DATABASES = {
     }
 }
 
+# key to store cart in user session
+CART_SESSION_ID = 'cart'
 
 # Serve uploaded images
 

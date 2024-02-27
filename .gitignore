@@ -15,3 +15,17 @@ local_settings.py
 
 migrations
 test_results
+
+# Ignore image files generated or manipulated by Pillow
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+
+# Ignore thumbnails or resized images if your project generates them
+thumbnails/
+resized/
+

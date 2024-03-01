@@ -3,12 +3,12 @@
 <html>
     <head>
 	<meta charset="utf-8" />
-	    <title>{% block title %}BAKERS WETU{% endblock %}</title>
+	    <title>{% block title %}bakers wetu{% endblock %}</title>
 	    <link href="{% static "css/base.css" %}" rel="stylesheet">
     </head>
     <body>
 	<div id="header">
-	    <a href="/" class="logo">My shop</a>
+	    <a href="/" class="logo">Bakers Wetu</a>
 	</div>
 	<div id="subheader">
 	    <div class="cart">
@@ -19,7 +19,7 @@
 			    {{ total_items }} item{{ total_items|pluralize }},
 			    Ksh {{ cart.get_total_price }}
 			</a>
-		    {% else %}
+		    {% elif not order %}
 		        Your cart is empty.
     		    {% endif %}
 	        {% endwith %}
